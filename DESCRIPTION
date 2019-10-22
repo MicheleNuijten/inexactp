@@ -1,0 +1,22 @@
+Package: inexactp
+Type: Package
+Title: Report the Proportion of Inexactly Reported P-Values in a Text
+Version: 0.0.0.9000
+Authors@R: person("Michele", "Nuijten", email = "m.b.nuijten@uvt.nl",
+  role = c("aut", "cre"))
+Description: This package can be used to identify the reporting style of 
+    p-values in a text. Specifically, with this package you can determine what 
+    proportion of p-values in a text is reported inexactly (i.e., p < ... or 
+    p > ..., instead of p = ...). Reporting a p-value in an inexact way is a 
+    suboptimal reporting practice. With this package, these cases can be 
+    flagged, so the author of the text can be notified of the quality of their
+    reporting.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    pdftools (>= 2.2),
+    stringi (>= 1.4.3),
+    tcltk (>= 3.6.0)
+Depends: R (>= 3.6.0)
+RoxygenNote: 6.1.1
